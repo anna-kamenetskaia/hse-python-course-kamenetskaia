@@ -109,9 +109,11 @@ def task_2_2(a, b):
 #   Используйте // и %. Для ведущего нуля: f"{h:02d}:{m:02d}".
 
 def task_2_3(minutes: int) -> str:
-    # TODO: реализовать
-    pass
-
+    hours = minutes // 60
+    left = minutes % 60
+    time = f"{hours:02d}:{left:02d}"
+    print(time)
+    return time
 
 # ============================================================
 # Подсказки
@@ -140,3 +142,6 @@ if __name__ == "__main__":
     print()
     print("Задача 2.2")
     task_2_2(int(input("Введите a: ")), int(input("Введите b: ")))
+    print()
+    print("Задача 2.3")
+    task_2_3(int(input("Введите минуты: ")))
