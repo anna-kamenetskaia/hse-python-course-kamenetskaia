@@ -84,9 +84,10 @@ def task_1_4():
 
 def task_2_4(s: str) -> int | None:
     """Вернуть длину, если > 5, иначе None."""
-    # TODO: реализовать
-    pass
-
+    if (n := len(s)) > 5:
+        return n
+    else:
+        return None
 
 # ============================================================
 # Задача 2.5. Моржовый оператор в цикле
@@ -108,8 +109,8 @@ def task_2_4(s: str) -> int | None:
 #       print(f"-> {line}")
 
 def task_2_5():
-    # TODO: реализовать
-    pass
+    while (line := input()) != "stop":
+        print(f"-> {line}")
 
 
 # ============================================================
@@ -134,3 +135,10 @@ if __name__ == "__main__":
     print()
     print("Задача 1.4")
     task_1_4()
+    print()
+    print("Задача 2.4")
+    s = input("Введите предложение: ")
+    print(task_2_4(s))
+    print()
+    print("Задача 2.5")
+    task_2_5()
