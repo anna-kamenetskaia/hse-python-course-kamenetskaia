@@ -55,8 +55,12 @@ def task_1_3():
 # Выведите его площадь и периметр.
 
 def task_1_4():
-    # TODO: реализовать
-    pass
+    length = 12
+    width = 5
+    area = length * width
+    perimeter = 2 * (length + width)
+    print(area)
+    print(perimeter)
 
 
 # ============================================================
@@ -127,3 +131,6 @@ if __name__ == "__main__":
     print()
     print("Задача 1.3")
     task_1_3()
+    print()
+    print("Задача 1.4")
+    task_1_4()
