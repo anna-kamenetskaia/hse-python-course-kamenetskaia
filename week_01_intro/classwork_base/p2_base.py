@@ -25,8 +25,15 @@ def task_1_1():
 # целочисленное деление, остаток и возведение в степень.
 
 def task_1_2():
-    # TODO: реализовать
-    pass
+    a = 7
+    b = 3
+    print(a + b)
+    print(a - b)
+    print(a * b)
+    print(a / b)
+    print(a // b)
+    print(a % b)
+    print(a ** b)
 
 
 # ============================================================
@@ -108,4 +115,11 @@ if __name__ == "__main__":
     print("p2_base: заполните TODO в функциях.")
     print("Задачи: 1.1, 1.2, 1.3, 1.4, 2.4, 2.5")
     print("Задачи 2.1–2.3 — в p2_advanced.py")
+    print()
+    print("Задача 1.1")
+    print()
     task_1_1()
+    print()
+    print("Задача 1.2")
+    print()
+    task_1_2()
