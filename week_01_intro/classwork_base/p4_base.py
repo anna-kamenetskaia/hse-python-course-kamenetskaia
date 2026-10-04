@@ -90,8 +90,8 @@ def task_2_1(radius: float) -> tuple:
 #   Out: a = 10, b = 5
 
 def task_2_2(a, b):
-    # TODO: реализовать
-    pass
+    a, b = b, a
+    print(f"a = {a}, b = {b}")
 
 
 # ============================================================
@@ -137,3 +137,6 @@ if __name__ == "__main__":
     print()
     print("Задача 2.1")
     task_2_1(float(input("Радиус: ")))
+    print()
+    print("Задача 2.2")
+    task_2_2(int(input("Введите a: ")), int(input("Введите b: ")))
