@@ -72,9 +72,12 @@ def task_1_4():
 # Подсказка: используйте math.pi и f-строки.
 
 def task_2_1(radius: float) -> tuple:
-    # TODO: реализовать
-    pass
-
+    import math
+    radius = float(input("Радиус: "))
+    C = 2 * math.pi * radius
+    S = math.pi * radius ** 2
+    print(f"S = {S: .2f}, C = {C: .2f}")
+    return S, C
 
 # ============================================================
 # Задача 2.2. Обмен значений
@@ -131,3 +134,6 @@ if __name__ == "__main__":
     print()
     print("Задача 1.4")
     task_1_4()
+    print()
+    print("Задача 2.1")
+    task_2_1(float(input("Радиус: ")))
