@@ -10,8 +10,10 @@
 """
 
 def main():
-    # TODO: создайте переменные и выведите строку
-    pass
+    name = "Иван"
+    age = 25
+    city = "Москва"
+    print(name, f"{age} лет", city, sep=", ")
 
 
 if __name__ == "__main__":
