@@ -17,8 +17,8 @@ def has_duplicates_slow(nums: list) -> bool:
     result = False
     for i in range(len(nums)):
         for j in range(i + 1, len(nums)):
-            # TODO: если nums[i] == nums[j], присвойте result = True
-            pass
+            if nums[i] == nums[j]:
+                result = True
     return result
 
 
@@ -83,3 +83,5 @@ def complexity_d() -> str:
 
 if __name__ == "__main__":
     print("p4_base: впишите пропущенные строки вместо TODO.")
+    print(has_duplicates_slow([1, 2, 3]))
+    print(has_duplicates_slow([1, 2, 1]))
