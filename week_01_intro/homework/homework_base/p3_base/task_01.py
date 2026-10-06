@@ -16,12 +16,12 @@
 def has_duplicates_slow(nums: list) -> bool:
     for i in range(len(nums)):
         for j in range(i + 1, len(nums)):
-            # TODO: если nums[i] == nums[j], верните True
-            pass
+            if nums[i] == nums[j]:
+                return True
     return False
 
 
 if __name__ == "__main__":
     data = [1, 2, 3, 2]
     print(has_duplicates_slow(data))   # True
-    print(has_duplicates_slow([1, 2, 3]))  # Falsetask_01.py
+    print(has_duplicates_slow([1, 2, 3]))  # False
