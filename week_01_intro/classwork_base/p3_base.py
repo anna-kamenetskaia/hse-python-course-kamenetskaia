@@ -33,10 +33,8 @@ def has_duplicates_fast(nums: list) -> bool:
     result = False
     for x in nums:
         if x in seen:
-            # TODO: присвойте result = True
-            pass
-        # TODO: добавьте x в seen, seen.add(x)
-        pass
+            result = True
+        seen.add(x)
     return result
 
 
@@ -85,3 +83,5 @@ if __name__ == "__main__":
     print("p4_base: впишите пропущенные строки вместо TODO.")
     print(has_duplicates_slow([1, 2, 3]))
     print(has_duplicates_slow([1, 2, 1]))
+    print(has_duplicates_fast([1, 2, 3]))
+    print(has_duplicates_fast([1, 2, 1]))
