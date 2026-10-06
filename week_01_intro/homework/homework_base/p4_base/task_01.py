@@ -10,8 +10,12 @@
 """
 
 def main():
-    # TODO: реализовать
-    pass
+    length = 12
+    width = 5
+    area = length * width
+    perimeter = 2 * (length + width)
+    print("Площадь:", area)
+    print("Периметр:", perimeter)
 
 
 if __name__ == "__main__":
