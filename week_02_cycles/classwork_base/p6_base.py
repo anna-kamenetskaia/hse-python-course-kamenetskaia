@@ -240,8 +240,14 @@ def task_3_4():
 #     discount = 0.0
 
 def task_3_5():
-    # TODO: реализовать
-    pass
+    total = float(input())
+    if total > 5000:
+         discount = 0.20
+    elif total > 1000:
+        discount = 0.10
+    else:
+        discount = 0.0
+
 
 
 # ------------------------------------------------------------
