@@ -318,8 +318,13 @@ def task_4_3():
 #     print("non-positive")
 
 def task_4_4():
-    # TODO: реализовать
-    pass
+    x = 12
+    if x > 0 and x % 2 == 0:
+        print("positive even")
+    else:
+        print("positive odd")
+    if x < 0:
+        print("non-positive")
 
 
 # ------------------------------------------------------------
@@ -339,8 +344,11 @@ def task_4_5():
 # если отрицательное — проверьте, делится ли на 3.
 
 def task_4_6():
-    # TODO: реализовать
-    pass
+    number = int(input())
+    if number > 0 and number % 2 == 0:
+        print("positive number")
+    else:
+        print(number % 3 == 0)
 
 
 # ============================================================
