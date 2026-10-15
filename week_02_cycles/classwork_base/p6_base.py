@@ -275,7 +275,7 @@ def task_3_6():
 #         print("b <= a")
 
 def task_4_1():
-    # TODO: реализовать
+    print("b > a")
     pass
 
 
