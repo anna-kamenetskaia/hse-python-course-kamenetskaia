@@ -49,7 +49,7 @@ def has_duplicates_fast(nums: list) -> bool:
 def complexity_a() -> str:
     # for x in items:
     #     print(x)
-    answer = "..."  # TODO
+    answer = "O(n)"
     return answer
 
 
@@ -57,7 +57,7 @@ def complexity_b() -> str:
     # for x in items:
     #     for y in items:
     #         print(x, y)
-    answer = "..."  # TODO
+    answer = "O(n^2)"
     return answer
 
 
@@ -65,7 +65,7 @@ def complexity_c() -> str:
     # i = 0
     # while i < n:
     #     i *= 2
-    answer = "..."  # TODO
+    answer = "O(log n)"  # при i = 1, при i = 0 цикл бесконечный
     return answer
 
 
@@ -75,7 +75,7 @@ def complexity_d() -> str:
     # for x in items:
     #     for y in items:
     #         pass
-    answer = "..."  # TODO
+    answer = "O(n^2)"
     return answer
 
 
@@ -85,3 +85,4 @@ if __name__ == "__main__":
     print(has_duplicates_slow([1, 2, 1]))
     print(has_duplicates_fast([1, 2, 3]))
     print(has_duplicates_fast([1, 2, 1]))
+    print(complexity_a(), complexity_b(), complexity_c(), complexity_d())
