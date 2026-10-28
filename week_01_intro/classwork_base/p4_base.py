@@ -72,6 +72,7 @@ def task_1_4():
 # Подсказка: используйте math.pi и f-строки.
 
 def task_2_1(radius: float) -> tuple:
+    import math
     C = 2 * math.pi * radius
     S = math.pi * radius ** 2
     print(f"S = {S:.2f}, C = {C:.2f}")
