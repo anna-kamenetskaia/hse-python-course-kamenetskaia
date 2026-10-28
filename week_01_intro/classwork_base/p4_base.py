@@ -14,13 +14,13 @@ def task_1_1():
         age = int(input("Возраст: "))
         city = input("Город: ")
         if age in (1, 21, 31, 41, 51, 61, 71, 81, 91, 101):
-            word = "год"
+            word = " год"
         elif age in (2, 3, 4, 22, 23, 24, 32, 33, 34, 42, 43, 44,
                      52, 53, 54, 62, 63, 64, 72, 73, 74, 82, 83, 84,
                      92, 93, 94, 102, 103, 104):
-            word = "года"
+            word = " года"
         else:
-            word = "лет"
+            word = " лет"
         print(f"{name}, {age} {word}, {city}")
 
 
@@ -72,11 +72,9 @@ def task_1_4():
 # Подсказка: используйте math.pi и f-строки.
 
 def task_2_1(radius: float) -> tuple:
-    import math
-    radius = float(input("Радиус: "))
     C = 2 * math.pi * radius
     S = math.pi * radius ** 2
-    print(f"S = {S: .2f}, C = {C: .2f}")
+    print(f"S = {S:.2f}, C = {C:.2f}")
     return S, C
 
 # ============================================================
