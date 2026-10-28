@@ -39,7 +39,7 @@ def complexity_b() -> str:
 
 
 def complexity_c() -> str:
-    return "O(log n)" # ответ для i = 1 (если n = 0, цикл бесконечный)
+    return "O(log n)" # ответ для i = 1 (если i = 0, цикл бесконечный)
 
 
 def complexity_d() -> str:
